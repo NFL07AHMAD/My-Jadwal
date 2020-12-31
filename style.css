@@ -5,12 +5,13 @@ body {
     font-family: sans-serif;
 }
 
+/* Judul */
 header {
     transform: translate(-50%, -50%);
     position: absolute;
     left: 50%;
     top: 10%;
-    background: linear-gradient(to right, #0078fc, #c500fc);
+    background: linear-gradient(to right, #86C0FF, #0078fc, #c500fc);
     width: 60%;
     text-align: center;
     border-radius: 10px;
@@ -19,14 +20,14 @@ header {
     font-size: 120%;
 }
 
+/* --Tabel-- */
 table {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 500px;
+    top: 1000px;
     font-size: 120%;
     padding: 40px;
-
 }
 
 th {
@@ -47,3 +48,53 @@ td {
     font-family: 'Roboto', sans-serif;
 }
 
+/* --Formulir-- */
+.card {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 50%;
+    box-shadow: black 2px 3px 5px, black -2px 3px 5px;
+    width: 40%;
+    text-align: center;
+    padding: 40px;
+    height: 50%;
+}
+
+.absen {
+    border: #5A5A5A solid 4px;
+    padding: 10px;
+    text-align: center;
+    background: #101010;
+    color: #fafafa;
+    width: 50%;
+    border-radius: 50px;
+    font-size: 110%;
+    outline: none;
+    transition-duration: 0.3s;
+}
+
+#submit {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 110%;
+    border-radius: 5px;
+    outline: none;
+    width: 30%;
+    background:  linear-gradient(to right, #0078fc, #c500fc);
+    border: none;
+    color: #fafafa;
+    transition-duration: 0.3s;
+}
+
+.absen:focus {
+    width: 60%;
+    border: #0078fc solid 4px;
+    color: #429CFF;
+    box-shadow: #0078fc 0 1px 2px, #0078fc 0 1px 10px, #0078fc 0 1px 20px, #0078fc inset 0 1px 2px, #0078fc inset 0 1px 17px;
+}
+
+#submit:hover {
+    font-size: 130%;
+    width: 40%;
+}
