@@ -55,8 +55,6 @@ header {
     padding-top: 5%;
     justify-content: center;
     z-index: 2;
-    
-    
 }
 /* --Tabel-- */
 table {
@@ -102,16 +100,16 @@ td {
 }
 
 .absen {
-    border: #5A5A5A solid 4px;
+    border: #5A5A5A solid 1px;
     padding: 10px;
     text-align: center;
     background: #101010;
     color: #fafafa;
     width: 50%;
-    border-radius: 50px;
     font-size: 110%;
     outline: none;
     transition-duration: 0.3s;
+    border-radius: 50px;
 }
 
 #submit {
@@ -208,7 +206,19 @@ td {
     display: block;
 }
 
+.playlist {
+    position: absolute;
+    transform: translate(-50%);
+    top: 2400px;
+    left: 50%;
+    padding: 10%;
+    font-size: 120%;
+}
 
+iframe {
+    width: 560px;
+    height: 315px;
+}
 /* --responsive-- */
 @media screen and (max-width: 800px) {
     header{
