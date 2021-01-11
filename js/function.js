@@ -47,9 +47,9 @@ $(document).ready(function () {
             $('#libur').hide();
             $('.pass').show();
             $('.pass_back').show();
-        } else {
-            $('html').empty().html('<h1 style="text-align:center; font-size:380%; color: red; background: black;">ERROR :(</h1>');
-        }
+        } //else {
+        //     $('html').empty().html('<h1 style="text-align:center; font-size:380%; color: red; background: black;">ERROR :(</h1>');
+        // }
     }());
     (function () {
         $('#wrong').hide()
