@@ -47,29 +47,16 @@ $(document).ready(function () {
             $('#libur').hide();
             $('.pass').show();
             $('.pass_back').show();
-        } //else {
-        //     $('html').empty().html('<h1 style="text-align:center; font-size:380%; color: red; background: black;">ERROR :(</h1>');
-        // }
+        } else if(isNaN(day)){
+            $('html').empty().html('<h1 style="text-align:center; font-size:380%; color: red; background: black;">ERROR :(</h1>');
+        }
     }());
-    (function () {
-        $('#wrong').hide()
-        $('#submit').click(function () {
-            window.location.href = '#table'
+
+    $('#link_youtube_kirim').click(function () {
+        let link = $('#link_youtube_insert').val()
+        $('#costum_link_youtube').attr({
+            "src": link
         })
-        $('#submit_2').click(function () {
-            let password = $('#password').val();
-            if (password == "NFL07") {
-                $('.pass_back').hide();
-                $('.pass').hide();
-                $('#password').val("")
-            } else {
-                $('#wrong').show();
-            }
-        })
-        $('#link_youtube_kirim').click(function(){
-            let link = $('#link_youtube_insert').val()
-            $('#costum_link_youtube').attr({"src" : link})
-            $('#link_youtube_insert').val("")
-        })
-    }())
+        $('#link_youtube_insert').val("")
+    }());
 });
